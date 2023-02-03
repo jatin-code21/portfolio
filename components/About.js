@@ -3,6 +3,7 @@ import Instagram from '../public/instagram.png'
 import Image from 'next/image'
 import Linkedin from '../public/linkedin.png'
 import Github from '../public/github.png'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -16,15 +17,26 @@ const About = () => {
 
         <button className={`${styles.button} ${styles.iButton} ${styles.btn}`}>Resume</button>
         <div className={styles.iIcons}>
-          <Image
-            src={Instagram}
-          />
-          <Image
-            src={Linkedin}
-          />
-          <Image
-            src={Github}
-          />
+          <Link href="https://www.instagram.com/jatinoza21/">
+            <Image
+              src={Instagram}
+              alt="Instagram"
+            />
+          </Link>
+
+          <Link href="https://linkedin.com/in/jatinoza2108">
+            <Image
+              src={Linkedin}
+              alt="Linkedin"
+            />
+          </Link>
+          <Link href="https://github.com/jatin-code21">
+            <Image
+              src={Github}
+              alt="Github"
+            />
+          </Link>
+
         </div>
       </div>
       <div className={styles.iRight}>

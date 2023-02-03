@@ -61,6 +61,20 @@
     height: 2rem;
 }
 
+.iIcons{
+    display: flex;
+    margin-top: 3rem;
+    gap: 0rem;
+}
+
+.iIcons>*{
+    transform: scale(0.8);
+}
+
+.iIcons>*:hover{
+    cursor: pointer;
+}
+
 .iRight {
     display: flex;
     position: relative;
